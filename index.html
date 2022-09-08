@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Splayer-2</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+    <link rel="stylesheet" href="/css/splayer.css">
+</head>
+<body>
+    <div class="video-container paused   " data-volume-level="high">
+        <img class="thumbnail-img" src="" alt="">
+        <div class="video-controls-container">
+            <div class="timeline-container">
+                <div class="timeline">
+                    <div class="preview-img">
+                        <div class="thumbnail-indicator"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="controls">
+                <button class="play-pause-btn">
+                    <span class="material-symbols-rounded  play-icon">
+                    play_circle
+                    </span>
+                    <span class="material-symbols-rounded pause-icon">
+                        pause_circle
+                        </span>
+                
+                </button>
+
+                <div class="volume-container">
+                    <button class="mute-btn">
+                        <span class="material-symbols-rounded volume-high-icon">
+                            volume_up
+                            </span>
+                            <span class="material-symbols-rounded volume-low-icon">
+                                volume_down
+                                </span>
+                                <span class="material-symbols-rounded volume-muted-icon">
+                                    volume_off
+                                    </span>
+                    </button>
+                    <input class="volume-slider" type="range" min="0" max="1" step="any" value="1">
+                </div>
+                <div class="duration-container">
+                    <div class="current-time">0:00</div>
+                    /
+                    <div class="total-time"></div>
+                </div>
+                <button class="captions-btn">
+                    <span class="material-symbols-rounded">
+                        closed_caption
+                        </span>
+                </button>
+                <button class="speed-btn wide-btn">
+                    1x
+                </button>
+
+                 <button class="mini-player-btn">
+                    <span class="material-symbols-rounded">
+                        picture_in_picture_alt
+                        </span>
+                </button>
+                <button class="theater-btn">
+                    <span class="material-symbols-rounded theater-icon">
+                        crop_16_9
+                        </span>
+                        <span class="material-symbols-rounded theater-exit-icon">
+                            crop_7_5
+                            </span>
+                </button>
+                <button class="fullscreen-btn">
+                    <span class="material-symbols-rounded fullscreen-icon">
+                        fullscreen
+                        </span>
+                        <span class="material-symbols-rounded fullscreen-exit-icon">
+                            fullscreen_exit
+                            </span>
+                </button>
+                
+            </div>
+        </div>
+        <video src="/Pakka-Commercial-n1kpd-2022.mp4">
+            <track kind="captions"  srclang="en" src="#">
+        </video>
+    </div>
+    <script src="/js/splayer.js"></script>
+</body>
+</html>
